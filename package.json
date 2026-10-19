@@ -10,9 +10,18 @@
     "url": "git+https://github.com/davidsmorais/dark-magic-avatars.git"
   },
   "bugs": "https://github.com/davidsmorais/dark-magic-avatars/issues",
-  "keywords": ["avatar", "wizard", "svg", "react", "generator", "identicon"],
+  "keywords": [
+    "avatar",
+    "wizard",
+    "svg",
+    "react",
+    "generator",
+    "identicon"
+  ],
   "type": "module",
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -23,12 +32,19 @@
     "./builder.css": "./builder.css",
     "./package.json": "./package.json"
   },
-  "files": ["dist", "src", "builder.css", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "src",
+    "builder.css",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+    "prepublishOnly": "npm run typecheck && npm test && npm run build",
+    "assets": "node scripts/render-assets.mjs"
   },
   "peerDependencies": {
     "react": ">=17"
