@@ -1,6 +1,6 @@
 {
   "name": "@dsmorais/dark-magic-avatars",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Composable SVG wizard avatars for React: 6 bodies, hats, eyes, mouths, staffs and capes, plus a builder UI.",
   "license": "MIT",
   "author": "David Morais <david@davidmorais.com>",
