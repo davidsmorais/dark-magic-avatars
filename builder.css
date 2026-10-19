@@ -1,0 +1,144 @@
+.wa-builder {
+  --wa-border: rgba(127, 127, 127, 0.25);
+  --wa-surface: rgba(127, 127, 127, 0.08);
+  --wa-surface-hover: rgba(127, 127, 127, 0.16);
+  --wa-accent: #8c15f9;
+  --wa-muted: inherit;
+  --wa-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.wa-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.wa-preview {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid var(--wa-border);
+  border-radius: var(--wa-radius);
+  background: var(--wa-surface);
+}
+
+.wa-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 4px;
+}
+
+.wa-button {
+  padding: 4px 10px;
+  border: 1px solid var(--wa-border);
+  border-radius: 6px;
+  background: var(--wa-surface);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.wa-button:hover {
+  background: var(--wa-surface-hover);
+}
+
+.wa-button-ghost {
+  border-color: transparent;
+  background: transparent;
+}
+
+.wa-part {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid var(--wa-border);
+}
+
+.wa-part-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--wa-muted);
+  opacity: 0.8;
+}
+
+.wa-variants,
+.wa-colors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.wa-colors[aria-disabled='true'] {
+  opacity: 0.5;
+}
+
+.wa-variant {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--wa-border);
+  border-radius: 6px;
+  background: var(--wa-surface);
+  cursor: pointer;
+}
+
+.wa-variant:hover {
+  background: var(--wa-surface-hover);
+}
+
+.wa-variant[aria-checked='true'] {
+  border-color: var(--wa-accent);
+  background: color-mix(in srgb, var(--wa-accent) 15%, transparent);
+}
+
+.wa-swatch {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid var(--wa-border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+
+.wa-swatch:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+.wa-swatch[aria-pressed='true'] {
+  border-color: currentColor;
+  box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 30%, transparent);
+}
+
+.wa-hex {
+  width: 80px;
+  height: 24px;
+  padding: 0 6px;
+  border: 1px solid var(--wa-border);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+}
+
+.wa-variant:focus-visible,
+.wa-swatch:focus-visible,
+.wa-button:focus-visible,
+.wa-hex:focus-visible {
+  outline: 2px solid var(--wa-accent);
+  outline-offset: 1px;
+}
