@@ -21,7 +21,7 @@ export interface WizardBuilderProps {
 }
 
 /**
- * Unstyled-by-default avatar editor. Import `@davidsmorais/dark-magic-avatars/builder.css`
+ * Unstyled-by-default avatar editor. Import `@dsmorais/dark-magic-avatars/builder.css`
  * for the default look, or target the `wa-*` class names yourself.
  */
 export function WizardBuilder({
