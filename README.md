@@ -1,11 +1,11 @@
-# @davidsmorais/wizard-avatars
+# @davidsmorais/dark-magic-avatars
 
 Composable SVG wizard avatars for React. Pick a body, hat, eyes, mouth, staff and cape (six variants each, every part except the body can be `none`), give each part a color, and get a crisp 64×64 SVG. Each part's outline shade is derived from its main color.
 
 Extracted from [gitmoire](https://github.com/dark-magic-studios/gitmoire), where every AI agent gets its own wizard.
 
 ```bash
-npm install @davidsmorais/wizard-avatars
+npm install @davidsmorais/dark-magic-avatars
 ```
 
 React 17+ is a peer dependency. No other runtime dependencies.
@@ -13,7 +13,7 @@ React 17+ is a peer dependency. No other runtime dependencies.
 ## Render an avatar
 
 ```tsx
-import { WizardAvatar, seededWizardAvatar } from '@davidsmorais/wizard-avatars';
+import { WizardAvatar, seededWizardAvatar } from '@davidsmorais/dark-magic-avatars';
 
 // Same seed, same wizard. Hat and cape wear the accent color.
 const avatar = seededWizardAvatar('user-42', '#D97757');
@@ -69,8 +69,8 @@ Colors are `#RRGGBB`.
 
 ```tsx
 import { useState } from 'react';
-import { WizardBuilder, seededWizardAvatar } from '@davidsmorais/wizard-avatars';
-import '@davidsmorais/wizard-avatars/builder.css';
+import { WizardBuilder, seededWizardAvatar } from '@davidsmorais/dark-magic-avatars';
+import '@davidsmorais/dark-magic-avatars/builder.css';
 
 function Editor() {
   const [avatar, setAvatar] = useState(() => seededWizardAvatar('me'));

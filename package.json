@@ -1,15 +1,15 @@
 {
-  "name": "@davidsmorais/wizard-avatars",
+  "name": "@davidsmorais/dark-magic-avatars",
   "version": "0.1.0",
   "description": "Composable SVG wizard avatars for React: 6 bodies, hats, eyes, mouths, staffs and capes, plus a builder UI.",
   "license": "MIT",
   "author": "David Morais <david@davidmorais.com>",
-  "homepage": "https://github.com/davidsmorais/wizard-avatars#readme",
+  "homepage": "https://github.com/davidsmorais/dark-magic-avatars#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidsmorais/wizard-avatars.git"
+    "url": "git+https://github.com/davidsmorais/dark-magic-avatars.git"
   },
-  "bugs": "https://github.com/davidsmorais/wizard-avatars/issues",
+  "bugs": "https://github.com/davidsmorais/dark-magic-avatars/issues",
   "keywords": ["avatar", "wizard", "svg", "react", "generator", "identicon"],
   "type": "module",
   "sideEffects": ["*.css"],
